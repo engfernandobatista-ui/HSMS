@@ -72,4 +72,10 @@ genre = st.radio(
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-                  
+st.header("5. Função", divider="gray",text_alignment="center")
+options = st.multiselect(
+    "Função do executante?",
+    ["System Tech", "Instrumentista", "Lead I&C"],
+    max_selections=1,
+    accept_new_options=True,
+)
