@@ -105,6 +105,8 @@ if picture:
 if st.button("Enviar:"):
     st.dataframe(dados_dict)
 
+
+pip install pandas openpyxl
 import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
