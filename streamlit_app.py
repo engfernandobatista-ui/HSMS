@@ -107,6 +107,7 @@ if st.button("Enviar:"):
 
 
 pip install pandas openpyxl
+pip install tkinter openpyxl
 import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
