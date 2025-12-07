@@ -5,9 +5,8 @@ st.title("Inspeção do HMS")
 
 title = st.text_input(" Embarcação", "")
 title = st.text_input("Nota", "")
-title = st
 
-title = st.text_input("Inspeção")
+st.header("Inspeção", divider="gray")
 genre = st.radio(
     "A identificação do painel e dos seus componentes estão visíveis e em bom estado de conservação (interno e externo)?",
     ["OK", "NOK", "N/A"],
