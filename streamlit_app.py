@@ -10,52 +10,52 @@ dados_dict["Horas"] = st.number_input("Duração da atividade (horas):", format=
 dados_dict["Data"] = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6), format="DD/MM/YYYY")
 
 st.header("1. Inspeção", divider="gray",text_alignment="center")
-genre = st.radio(
+dados_dict["Pergunta_1"] = st.radio(
     "A identificação do painel e dos seus componentes estão visíveis e em bom estado de conservação (interno e externo)?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_2"] = st.radio(
     "O equipamento apresentou algum alarme?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_3"] = st.radio(
     "A configuração dos equipamentos está conforme especificação do fabricante?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_4"] = st.radio(
     "Foram detectados sinais de umidade, poeira ou sujeira no gabinete?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_5"] = st.radio(
     "Existe sinal de corrosão e/ou ferrugem nos componentes do sistema?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_6"] = st.radio(
     "Há prensa-cabos frouxos, quebrados, não instalados, etc.?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_7"] = st.radio(
     "O gabinete do HSMS está selado e limpo?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_8"] = st.radio(
     "Suporte e fixação em bom estado de conservação e adequados aos componentes?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_9"] = st.radio(
     "Foi verificado se as fixações do gabinete estão no lugar e seguras?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
-genre = st.radio(
+dados_dict["Pergunta_10"] = st.radio(
     "Foi verificado se as roscas estão lubrificadas no sensor SBSG?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
