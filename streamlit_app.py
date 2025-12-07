@@ -5,6 +5,7 @@ st.title("Inspeção do HMS")
 
 title = st.text_input(" Embarcação", "")
 title = st.text_input("Nota", "")
+d = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6), format="DD/MM/YYYY")
 
 st.header("1. Inspeção", divider="gray",text_alignment="center")
 genre = st.radio(
@@ -12,8 +13,13 @@ genre = st.radio(
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
+genre = st.radio(
+    "O equipamento apresentou algum alarme?",
+    ["OK", "NOK", "N/A"],
+    index=None,horizontal=True
+)
 
 
-d = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6), format="DD/MM/YYYY")
+
 
                   
