@@ -106,8 +106,7 @@ if st.button("Enviar:"):
     st.dataframe(dados_dict)
 
 
-pip install pandas
-pip install tkinter openpyxl
+# Comando para selecionar planilha
 import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
