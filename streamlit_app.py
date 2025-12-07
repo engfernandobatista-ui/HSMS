@@ -11,7 +11,7 @@ title = st
 genre = st.radio(
     "A identificação do painel e dos seus componentes estão visíveis e em bom estado de conservação (interno e externo)?",
     ["OK", "NOK", "N/A"],
-    index=None,
+    index=None,horizontal=True
 )
 
 
