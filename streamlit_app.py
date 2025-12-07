@@ -24,11 +24,6 @@ genre = st.radio(
     index=None,horizontal=True
 )
 genre = st.radio(
-    "A configuração dos equipamentos está conforme especificação do fabricante?",
-    ["OK", "NOK", "N/A"],
-    index=None,horizontal=True
-)
-genre = st.radio(
     "Foram detectados sinais de umidade, poeira ou sujeira no gabinete?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
