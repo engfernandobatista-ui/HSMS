@@ -34,11 +34,6 @@ genre = st.radio(
     index=None,horizontal=True
 )
 genre = st.radio(
-    "Existe sinal de corrosão e/ou ferrugem nos componentes do sistema?",
-    ["OK", "NOK", "N/A"],
-    index=None,horizontal=True
-)
-genre = st.radio(
     "Há prensa-cabos frouxos, quebrados, não instalados, etc.?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
