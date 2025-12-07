@@ -79,3 +79,11 @@ options = st.multiselect(
     max_selections=1,
     accept_new_options=True,
 )
+title = st.text_input(" Nome do executante", "")
+options = st.multiselect(
+    "Função do aprovador?",
+    ["System Tech", "Instrumentista", "Lead I&C"],
+    max_selections=1,
+    accept_new_options=True,
+)
+title = st.text_input(" Nome do aprovador", "")
