@@ -72,7 +72,13 @@ genre = st.radio(
     ["GOOD", "ADJU", "MALF", "MFAR"],
     index=None,horizontal=True
 )
-st.header("5. Função", divider="gray",text_alignment="center")
+st.header("5. Classificação", divider="gray",text_alignment="center")
+genre = st.radio(
+    "Classificação da falha de impacto?",
+    ["Falha incipiente", "Falha degradada", "Falha crítica"],
+    index=None,horizontal=True
+)
+st.header("6. Função", divider="gray",text_alignment="center")
 options = st.multiselect(
     "Função do executante?",
     ["System Tech", "Instrumentista", "Lead I&C"],
@@ -88,7 +94,7 @@ options = st.multiselect(
 )
 title = st.text_input(" Nome do aprovador", "")
 
-st.header("6. Anexos", divider="gray",text_alignment="center")
+st.header("7. Anexos", divider="gray",text_alignment="center")
 enable = st.checkbox("Enable camera")
 picture = st.camera_input("Take a picture", disabled=not enable)
 
