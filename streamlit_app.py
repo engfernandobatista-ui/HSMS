@@ -87,3 +87,10 @@ options = st.multiselect(
     accept_new_options=True,
 )
 title = st.text_input(" Nome do aprovador", "")
+
+st.header("6. Anexos", divider="gray",text_alignment="center")
+enable = st.checkbox("Enable camera")
+picture = st.camera_input("Take a picture", disabled=not enable)
+
+if picture:
+    st.image(picture)
