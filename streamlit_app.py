@@ -5,6 +5,7 @@ st.title("Inspeção do HMS")
 
 title = st.text_input(" Embarcação", "")
 title = st.text_input("Nota", "")
+number = st.number_input("Duração da atividade (horas):")
 d = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6), format="DD/MM/YYYY")
 
 st.header("1. Inspeção", divider="gray",text_alignment="center")
