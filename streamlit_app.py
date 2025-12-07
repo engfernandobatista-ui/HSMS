@@ -66,4 +66,9 @@ genre = st.radio(
 )
 st.header("3. Comentários", divider="gray",text_alignment="center")
 title = st.text_input("")
+st.header("4. Condição Resultante do Instrumento/Equipamento", divider="gray",text_alignment="center")
+genre = st.radio(
+    ["OK", "NOK", "N/A"],
+    index=None,horizontal=True
+)
                   
