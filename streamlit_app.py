@@ -61,40 +61,40 @@ dados_dict["Pergunta_10"] = st.radio(
     index=None,horizontal=True
 )
 st.header("2. Considerações finais", divider="gray",text_alignment="center")
-genre = st.radio(
+dados_dict["Pergunta_11"] = st.radio(
     "Todas as anormalidades encontradas na inspeção foram sanadas?",
     ["OK", "NOK", "N/A"],
     index=None,horizontal=True
 )
 st.header("3. Comentários", divider="gray",text_alignment="center")
-title = st.text_input("")
+dados_dict["Pergunta_12"] = st.text_input("")
 st.header("4. Condição", divider="gray",text_alignment="center")
-genre = st.radio(
+dados_dict["Pergunta_13"] = st.radio(
     "Condição Resultante do Instrumento/Equipamento?",
     ["GOOD", "ADJU", "MALF", "MFAR"],
     index=None,horizontal=True
 )
 st.header("5. Classificação", divider="gray",text_alignment="center")
-genre = st.radio(
+dados_dict["Pergunta_14"] = st.radio(
     "Classificação da falha de impacto?",
     ["Falha incipiente", "Falha degradada", "Falha crítica"],
     index=None,horizontal=True
 )
 st.header("6. Função", divider="gray",text_alignment="center")
-options = st.multiselect(
+dados_dict["Pergunta_15"] = st.multiselect(
     "Função do executante?",
     ["System Tech", "Instrumentista", "Lead I&C"],
     max_selections=1,
     accept_new_options=True,
 )
-title = st.text_input(" Nome do executante", "")
+dados_dict["Pergunta_16"] = st.text_input(" Nome do executante", "")
 options = st.multiselect(
     "Função do aprovador?",
     ["System Tech", "Instrumentista", "Lead I&C"],
     max_selections=1,
     accept_new_options=True,
 )
-title = st.text_input(" Nome do aprovador", "")
+dados_dict["Pergunta_17"] = st.text_input(" Nome do aprovador", "")
 
 st.header("7. Anexos", divider="gray",text_alignment="center")
 enable = st.checkbox("Enable camera")
