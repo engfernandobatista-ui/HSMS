@@ -6,8 +6,8 @@ st.title("Inspeção do HMS")
 
 dados_dict["Embarcação"] = st.text_input(" Embarcação", "")
 dados_dict["Nota"] = st.text_input("Nota", "")
-dados_dict[Horas] = st.number_input("Duração da atividade (horas):", format="%0.1f")
-dados_dict[Data] = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6), format="DD/MM/YYYY")
+dados_dict["Horas"] = st.number_input("Duração da atividade (horas):", format="%0.1f")
+dados_dict["Data"] = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6), format="DD/MM/YYYY")
 
 st.header("1. Inspeção", divider="gray",text_alignment="center")
 genre = st.radio(
