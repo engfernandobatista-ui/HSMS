@@ -106,7 +106,7 @@ if st.button("Enviar:"):
     st.dataframe(dados_dict)
 
 
-pip install pandas openpyxl
+pip install pandas
 pip install tkinter openpyxl
 import pandas as pd
 import tkinter as tk
