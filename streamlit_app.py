@@ -1,10 +1,11 @@
 import streamlit as st
 import datetime
 
+dados_dict = {}
 st.title("Inspeção do HMS")
 
-title = st.text_input(" Embarcação", "")
-title = st.text_input("Nota", "")
+dados_dict["Embarcação"] = st.text_input(" Embarcação", "")
+dados_dict["Nota"] = st.text_input("Nota", "")
 number = st.number_input("Duração da atividade (horas):", format="%0.1f")
 d = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6), format="DD/MM/YYYY")
 
@@ -101,3 +102,5 @@ picture = st.camera_input("Take a picture", disabled=not enable)
 
 if picture:
     st.image(picture)
+if st.button("Enviar:"):
+    st.dataframe(dados_dict)
