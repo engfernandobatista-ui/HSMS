@@ -104,3 +104,33 @@ if picture:
     st.image(picture)
 if st.button("Enviar:"):
     st.dataframe(dados_dict)
+
+import pandas as pd
+import tkinter as tk
+from tkinter import filedialog
+from tkinter import messagebox
+
+def carregar_planilha():
+    # Abre um diálogo para escolher o arquivo
+    arquivo = filedialog.askopenfilename(filetypes=[("Excel files", "*.xlsx;*.xls")])
+    
+    if arquivo:
+        try:
+            # Carrega a planilha usando pandas
+            df = pd.read_excel(arquivo)
+            # Exibe as primeiras linhas do DataFrame
+            print(df.head())
+            messagebox.showinfo("Sucesso", "Planilha carregada com sucesso!")
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao carregar a planilha: {e}")
+
+# Cria a janela principal
+root = tk.Tk()
+root.title("Carregar Planilha Excel")
+
+# Cria um botão para carregar a planilha
+botao_carregar = tk.Button(root, text="Escolher Planilha", command=carregar_planilha)
+botao_carregar.pack(pady=20)
+
+# Inicia o loop da interface gráfica
+root.mainloop()
