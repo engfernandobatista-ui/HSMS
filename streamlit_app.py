@@ -14,6 +14,6 @@ genre = st.radio(
 )
 
 
-d = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6))
+d = st.date_input("Data de término da tarefa", datetime.date(2019, 7, 6), format="DD/MM/YYYY")
 
                   
